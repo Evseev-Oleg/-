@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <link rel="stylesheet"href="main.css" />
+</head>
+<body>
+    <form class="form" onsubmit="window.location = document.getElementById('text1').value+'/'+document.getElementById('text2').value; return false;">
+        <h1 class="auth">Авторизация</h1>
+        <input id="text1" type="email" placeholder="Логин" required>
+        <input id="text2" type="password" placeholder="Пароль" maxlength="20" minlength="6" required pattern="[a-zA-Z0-9]+">
+        <button class="form-btn">Войти</button>
+    </form>
+</body>
+</html>
